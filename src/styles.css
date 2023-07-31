@@ -1,37 +1,45 @@
 :root {
+
   /* Paleta de colores */
+
   --Beige: #fff5d7;
   --Coral: #ff5e6c;  
   --Purpura: #4e4050;
   --Rosa: #ffaaab;
+  
+  /* Tipografia */
+
+  font-size: 16px;
+  font-weight: 400;
 }
 
 * {
+
   /* Estilos para aplicar a toda la pagina - reset */
-  font-size: 16px;
-  font-weight: 400;
+
   box-sizing: border-box;
   max-width: 100%;
-  padding: 0%;
-  margin: 0%;
+  padding: 0px;
+  margin: 0px;
   user-select: none;
 }
 
 body {
   min-height: 100vh;
   background-image: linear-gradient(to left, var(--Beige), var(--Rosa));
-  padding: 1rem;
+  padding: 16px 8px 24px;
 }
 
 h1,
 h2 {
   font-family: "Italiana";
-  font-weight: 900;
+  font-weight: 700;
   color: var(--Purpura);
 }
 
 h1 {
    font-size: 3rem;
+   max-width: 16rem;
 }
 
 h2 {
@@ -57,19 +65,55 @@ a {
   color: var(--Coral);
 }
 
-article {
-  margin: 1rem 0rem;
+header,
+footer {
+
+  /* Estos elementos estan arreglados en forma de linea con flex, justificados con espacio entre medio */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+
+  /* Este elemento es el boton que lleva a la pagina del resumen */
+
+  padding: 8px 16px;
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--Purpura);
+  background-color: var(--Rosa);
+  border: 1px solid var(--Purpura);
+  box-shadow: 0px 2px 8px var(--Purpura);
+  border-radius: 4px;
+}
+
+button:hover {
+
+  /* El boton cambia color al hacer hover */
+
+  cursor: pointer;
+  background-color: var(--Coral);
 }
 
 img {
-  width: 24px;
+
+  /* Iconos de lenguajes y frameworks */
+  
+  width: 32px;
 }
 
 .aside {
+
   /* Este elemento va a estar posicionado de forma absoluta */
+
   position: absolute;
-  top: 20%;
-  right: 10%;
+  top: 25%;
+  right: 8px;
 }
 
 .lista-datos,
@@ -82,7 +126,9 @@ img {
 
 .barra-iconos,
 .barra-iconos > li {
-  /* Este elemento va a estar arreglado en forma de columna con flex */
+
+  /* Estos elementos van a estar arreglados en forma de columna con flex */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,6 +143,12 @@ footer * {
   font-size: 0.75rem;
 }
 
+article,
 footer {
   margin-top: 1rem;
+}
+
+footer img {
+  width: 16px;
+  margin-bottom: -2px;
 }
