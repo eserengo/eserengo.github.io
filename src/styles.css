@@ -1,0 +1,102 @@
+:root {
+  /* Paleta de colores */
+  --Beige: #fff5d7;
+  --Coral: #ff5e6c;  
+  --Purpura: #4e4050;
+  --Rosa: #ffaaab;
+}
+
+* {
+  /* Estilos para aplicar a toda la pagina - reset */
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to left, var(--Beige), var(--Rosa));
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: "Italiana";
+  font-weight: 900;
+  color: var(--Purpura);
+}
+
+h1 {
+   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+ul,
+li,
+p,
+div,
+span {
+  font-family: "Roboto";
+  color: var(--Purpura);
+}
+
+a {
+  font-family: "Roboto";
+  color: var(--Coral);
+}
+
+article {
+  margin: 1rem 0rem;
+}
+
+img {
+  width: 24px;
+}
+
+.aside {
+  /* Este elemento va a estar posicionado de forma absoluta */
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+
+.lista-datos,
+.lista-intereses,
+.lista-intereses > li,
+.lista-intereses > li > ul > li,
+.experiencias {
+  margin-left: 8px;
+}
+
+.barra-iconos,
+.barra-iconos > li {
+  /* Este elemento va a estar arreglado en forma de columna con flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barra-iconos {
+  gap: 8px;
+}
+
+.barra-iconos > li > p,
+footer * {
+  font-size: 0.75rem;
+}
+
+footer {
+  margin-top: 1rem;
+}

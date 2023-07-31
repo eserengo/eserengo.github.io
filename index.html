@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Aqui cargo las fuentes de Google usadas en la pagina -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+  <!-- Aqui cargo la hoja de estilos para la pagina -->
+  <link rel="stylesheet" href="./src/styles.css" media="all">
   <meta name="description" content="Author: Federico Borzani, Sobre mi">
   <title>Resumen del alumno</title>
 </head>
 <body>
   <header>
     <h1>Informacion del alumno</h1>
+    <nav>
+      <!-- Agrega enlaces de navegacion aqui (si es necesario) -->
+    </nav>
   </header>
-  <nav>
-    <!-- Agrega enlaces de navegacion aqui (si es necesario) -->
-  </nav>
+
   <main>
     <article>
       <h2>Datos basicos</h2>
       <!-- Agrega informacion basica del alumno aqui -->
-      <ul>
+      <ul class="lista-datos">
         <li>Nombre: Federico Borzani</li>
         <li>Edad: 45 años</li>
         <li>Locacion: Mendoza, Argentina</li>
@@ -29,7 +35,8 @@
     <article>
       <h2>Intereses</h2>
       <!-- Agrega los intereses del alumno aqui -->
-      <ul>Desarrollo Web
+      <ul class="lista-intereses">
+        Desarrollo Web
         <li>
           <ul>
             Lenguajes
@@ -53,12 +60,45 @@
     <article>
       <h2>Experiencias</h2>
       <!-- Agrega las experiencias del alumno aqui -->
-      <p>Programacion Web Front-End  /  FAMAF - UNC</p>
+      <p class="experiencias">Programacion Web Front-End  /  FAMAF - UNC</p>
     </article>
   </main>
-  <aside>
+
+  <aside class="aside">
     <!-- Agrega contenido adicional o enlaces relacionados aqui (si es necesario) -->
+    <ul class="barra-iconos">
+      <li>
+        <img src="./src/imagenes/html.svg" alt="html logo" />
+        <p>HTML</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/css.svg" alt="css logo" />
+        <p>CSS</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/javascript.svg" alt="javascript logo" />
+        <p>JavaScript</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/react.svg" alt="react logo" />
+        <p>React</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/vue.svg" alt="vue logo" />
+        <p>Vue</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/bootstrap.svg" alt="bootstrap logo" />
+        <p>Bootstrap</p>
+      </li>
+      <li>
+        <img src="./src/imagenes/tailwindcss.svg" alt="tailwindcss logo" />
+        <p>Tailwind</p>
+      </li>
+      </li>
+    </ul>
   </aside>
+
   <footer>
     <!-- Agrega informacion del pie de pagina aqui -->
     <div>
