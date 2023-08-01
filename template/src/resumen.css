@@ -566,6 +566,16 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
+
+footer {
+  font-size: var(--smaller-font-size);
+  margin: 8px;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
 @media screen and (max-width: 320px){
